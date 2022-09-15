@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        html {
+            background-color: hsl(191,99%,35%);
+        }
+        body {
+            background-color: hsl(191,99%,55%);
+            margin: 20px 50px 20px 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 30px;
+            padding-bottom: 30px;}
+         
+        button {margin-left: 20px;}
+        h1 {text-align: center;
+            color: hsl(0, 0%, 63%);
+            }
+        h4 {
+            color: hsl(0, 0%, 83%);
+            border: solid grey ;
+            margin-left: 30px; 
+            margin-right: 1100px;
+            margin-top: 20px;}
+        input {
+            padding: 10px;
+            background-color: hsl(191,99%,85%);
+            border-radius: 10px;
+            border: solid hsl(0, 1%, 33%);
+            width: 200px;
+            height: 10px;}   
+        option {
+            background-color: white}
+        select {
+            background-color: hsl(191,99%,85%)
+        }
+        #firstpart {
+            background-color: hsl(191,100%,20%);}
+        #instruct {
+            color: hsl(0, 0%, 33%)
+        }        
+        #topofthepage {
+            display: block;
+            margin-left: 40%;
+            margin-right: 70%;
+            width: 20%;}
+        .optionstotick {
+            padding-right: 2px; 
+        }
+        th {
+            color: hsl(0,0%,33%);
+        }
+        button {background-color: hsl(191,100%,30%);
+                color: hsl(0,0%,83%);
+                width: 100px;
+                height: 30px;
+                border: solid hsl(0, 1%, 33%);
+                border-radius: 10px;}
+        .gne { padding: 10px;
+            background-color: hsl(191,99%,85%);
+            border-radius: 10px;
+            border: solid hsl(0, 1%, 33%);
+            width: 200px;
+            height: 34px;}        
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="firstpart">
+   <img src="surveyform.webp" alt="Survey Image" id="topofthepage">
+   <h1> Sample HTML Survey Form</h1>
+   <h4>Research Data Management Services</h4>
+   <h4>University of Delaware</h4>
+   <p style="color: hsl(0, 100%, 78%);">This page illustrates how to form various components of a surey using HTML forms</p>
+   <hr>
+   </div>
+   <div id="instruct">
+   <p>The purpose of the survey would be stated here at the top of the survey. This survey should take less than 10 minutes to complete</p>
+   <p>Some simple demographic information could be collected with radio buttons (e.g., gender, nationality), selection boxes (e.g., date of birth, higehest degree attained):</p>
+   <h3>Please tell us a little about yourself.</h3>
+   </div>
+   <form>
+    <label for="">First Name:</label>
+    <input type="text" value="Paulina"><br><br>
+    <label for="">Lastname:</label>
+    <input type="text" value="Egbelade"><br><br>
+    <label for="">Phone Number: </label>
+    <input type="text" value="+234"><br><br>
+   <label for="">Gender:</label> 
+    <select name="gender" class="gne">
+        <option class="gender" value="gender"></option>
+        <option class="gender" value="gender">Male</option>
+        <option class="gender" value="gender">Female</option>
+    </select> <br><br>
+   <label for="">Date of birth:</label> 
+   <input type="date" name="" style="width: 100px;" id=""><br><br>
+   <label for="">Nationality:</label>
+   <select name="nationality" class="gne">
+    <option class="nationality" value=""></option>
+    <option class="nationality" value="nigeria">Nigeria</option>
+    <option class="nationality" value="southafrica">South Africa</option>
+    <option class="nationality" value="us">U.S.</option>
+    <option class="nationality" value="us">Canada</option>
+    <option class="nationality" value="mexico">Mexico</option>
+   </select><br><br>
+   <label for="" id="">Educational level attained:</label>
+   <select name="" class="gne">
+    <option value=""></option>
+    <option value="">Tetiary</option>
+    <option value="">Secondary</option>
+    <option value="">Primary</option>
+   </select>
+   <hr>
+   <h3>The following series of questions ask about your feelings toward your work. Select the answer that is the true most of the time.</h3>
+   <table border="1" title="Feelings Towards Your Work">
+    <tr>
+        <th></th>
+        <th>Strongly agree</th>
+        <th>Agree</th>
+        <th>Neither agree nor disagree</th>
+        <th>Disagree</th>
+        <th>Strongly disagree</th>
+    </tr>
+    <tr>
+        <td style="color: hsl(0,0%,23%);">The work is very stimulating</td>
+        <td class="optionstotick"><input type="radio" name="tweictct"></td>
+        <td class="optionstotick"><input type="radio" name="tweictct"></td>
+        <td class="optionstotick"><input type="radio" name="tweictct"></td>
+        <td class="optionstotick"><input type="radio" name="tweictct"></td>
+        <td class="optionstotick"><input type="radio" name="tweictct"></td>
+    </tr>
+    <tr>
+        <td style="color: hsl(0,0%,23%);">I have a lot of freedom work</td>
+        <td class="optionstotick"><input type="radio" name="ihalofw"></td>
+        <td class="optionstotick"><input type="radio" name="ihalofw"></td>
+        <td class="optionstotick"><input type="radio" name="ihalofw"></td>
+        <td class="optionstotick"><input type="radio" name="ihalofw"></td>
+        <td class="optionstotick"><input type="radio" name="ihalofw"></td>
+    </tr>
+    <tr>
+        <td style="color: hsl(0,0%,23%);">My professor is very demanding of high quality</td>
+        <td class="optionstotick"><input type="radio" name="mpivdohq" id=""></td>
+        <td class="optionstotick"><input type="radio" name="mpivdohq" id=""></td>
+        <td class="optionstotick"><input type="radio" name="mpivdohq" id=""></td>
+        <td class="optionstotick"><input type="radio" name="mpivdohq" id=""></td>
+        <td class="optionstotick"><input type="radio" name="mpivdohq" id=""></td>
+    </tr>
+    <tr>
+        <td style="color: hsl(0,0%,23%);">The work environment is conducive to creative thinking</td>
+        <td class="optionstotick"><input type="radio" name="tweictct" id=""></td>
+        <td class="optionstotick"><input type="radio" name="tweictct" id=""></td>
+        <td class="optionstotick"><input type="radio" name="tweictct" id=""></td>
+        <td class="optionstotick"><input type="radio" name="tweictct" id=""></td>
+        <td class="optionstotick"><input type="radio" name="tweictct" id=""></td>
+    </tr> 
+   </table>
+   <hr>
+   <p>Do you have any additional thoughts on the topic of the survey? <textarea name="" style="background-color: hsl(191,99%,85%);" id="" cols="60" rows="4"></textarea></p>
+   <p>If you would like to have a copy of the final summary results sent to you, please type your e-mail address below:
+   <p>E-mail address: <input type="email" name="" style="width: 300px;" placeholder="yourmail@gmail.com" id=""></p>
+   <p>Thank you for taking the survey. To submit the results, press the <b>Send info</b> button below.</p>
+   <button>Send info</button><button>Clear values</button>
+</form>
+</body>
+</html>
